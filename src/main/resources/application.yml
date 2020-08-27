@@ -1,0 +1,16 @@
+#URL para configurar este archivo https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html
+spring:
+  banner:
+      location: classpath:/banner/banner.txt
+#  thymeleaf: para realizar la configuracion ver en la pagina de configuracion spring.thymeleaf.... todo lo relacionado
+#DataBase Properties
+  datasource:    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@//IP:PORT/BD
+    username: USER
+    password: PASS
+#hibernate properties
+  jpa:
+    properties:      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+    show-sql: true    
+    
